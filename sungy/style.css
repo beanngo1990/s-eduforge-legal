@@ -1,0 +1,429 @@
+/* ============================================
+   Sungy – support.sungy.net
+   Shared Design System
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap');
+
+/* ---- Tokens ---- */
+:root {
+  --primary:        #28BFB2;
+  --primary-dark:   #117B78;
+  --primary-soft:   #CFF7F1;
+  --secondary:      #FFD34D;
+  --secondary-dark: #C88712;
+  --secondary-soft: #FFF2B8;
+  --accent:         #FF7B5F;
+  --accent-dark:    #D94B36;
+  --accent-soft:    #FFE1D8;
+  --bg:             #EAF8FF;
+  --bg-cool:        #DDF5FF;
+  --surface:        #FFFFFF;
+  --border:         #D7EEF8;
+  --text:           #334155;
+  --text-soft:      #64748B;
+  --muted:          #94A3B8;
+  --sky:            #AEE7FF;
+  --sky-deep:       #4DB7F2;
+  --green:          #74D889;
+  --lavender:       #DCD7FF;
+
+  --radius-sm:  8px;
+  --radius-md:  14px;
+  --radius-lg:  24px;
+  --radius-xl:  32px;
+
+  --shadow-sm:  0 2px 8px rgba(40,191,178,0.10);
+  --shadow-md:  0 6px 24px rgba(40,191,178,0.14);
+  --shadow-lg:  0 16px 48px rgba(40,191,178,0.18);
+
+  --nav-h: 68px;
+  --max-w: 760px;
+}
+
+/* ---- Reset ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Nunito Sans', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.navbar-inner {
+  max-width: var(--max-w);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-brand-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-brand-name {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--primary-dark);
+  letter-spacing: -0.3px;
+}
+
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-soft);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+}
+
+/* ---- Page wrapper ---- */
+.page {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* ---- Hero (index only) ---- */
+.hero {
+  text-align: center;
+  padding: 60px 24px 40px;
+}
+
+.hero-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 26px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 20px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  background: var(--secondary-soft);
+  color: var(--secondary-dark);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 900;
+  color: var(--primary-dark);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.hero h1 .highlight {
+  color: var(--accent);
+}
+
+.hero p {
+  font-size: 16px;
+  color: var(--text-soft);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ---- Cards grid (index) ---- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+.card-emoji {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.card-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.card-desc {
+  font-size: 14px;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
+
+.card-arrow {
+  margin-top: auto;
+  font-size: 20px;
+  color: var(--primary);
+}
+
+/* ---- Page header (inner pages) ---- */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 0 24px;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 36px;
+}
+
+.page-header-icon {
+  font-size: 40px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.page-header-text h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(22px, 4vw, 30px);
+  font-weight: 900;
+  color: var(--primary-dark);
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+}
+
+.page-header-text .updated {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* ---- Content typography ---- */
+.content > p,
+.content > ul,
+.content > ol {
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.content h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin: 36px 0 10px;
+  padding-left: 12px;
+  border-left: 4px solid var(--primary);
+}
+
+.content ul, .content ol {
+  padding-left: 24px;
+}
+
+.content li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.content a {
+  color: var(--primary-dark);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--primary-soft);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.content a:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* ---- Info box ---- */
+.info-box {
+  background: var(--primary-soft);
+  border: 1.5px solid var(--primary);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin: 20px 0;
+  font-size: 14px;
+  color: var(--primary-dark);
+}
+
+/* ---- Method card (delete account) ---- */
+.method-card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.method-card h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge-recommended {
+  display: inline-block;
+  padding: 2px 10px;
+  background: var(--secondary-soft);
+  color: var(--secondary-dark);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.method-card ol, .method-card ul {
+  padding-left: 22px;
+}
+
+.method-card li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.method-card .note {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--text-soft);
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  border-left: 3px solid var(--secondary);
+}
+
+/* ---- Warning box ---- */
+.warning-box {
+  background: var(--accent-soft);
+  border: 1.5px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: var(--accent-dark);
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+/* ---- Footer ---- */
+.footer {
+  text-align: center;
+  padding: 40px 24px;
+  border-top: 1px solid var(--border);
+  margin-top: 60px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  list-style: none;
+}
+
+.footer-links a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-soft);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+  .navbar { padding: 0 16px; }
+  .page { padding: 28px 16px 60px; }
+  .cards-grid { grid-template-columns: 1fr; }
+  .nav-links a { padding: 6px 10px; font-size: 13px; }
+  .page-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .method-card { padding: 20px; }
+}
