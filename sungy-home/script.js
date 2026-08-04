@@ -5,23 +5,23 @@
 const translations = {
   en: {
     nav: {
-      apps: "Our Apps",
+      apps: "About Sungy",
       about: "Why Sungy",
       support: "Support Center",
       contact: "Contact Us"
     },
     hero: {
-      badge: "🌟 Educational Apps for Children",
+      badge: "🌟 Educational App for Children",
       title: 'Empowering Kids Through <span class="highlight">Interactive Play</span>',
       subtitle: "Sungy builds joyful, ad-free, and safe learning experiences designed to nurture early language skills, creativity, and cognitive development.",
-      ctaPrimary: "Discover SKidsEnglish",
+      ctaPrimary: "Discover Sungy",
       ctaSecondary: "Support & Legal"
     },
     featured: {
       badge: "🚀 Featured Application",
-      title: "SKidsEnglish",
+      title: "Sungy",
       tagline: "Fun & Interactive Early English Learning",
-      desc: "SKidsEnglish turns vocabulary building into an exciting adventure! Designed specifically for young learners, children explore interactive themes, master natural English pronunciations, and earn fun reward stickers.",
+      desc: "Sungy turns vocabulary building into an exciting adventure! Designed specifically for young learners, children explore interactive themes, master natural English pronunciations, and earn fun reward stickers.",
       f1Title: "27+ Curated Lessons",
       f1Desc: "Spanning everyday topics: daily routines, outdoor discovery, body & emotions.",
       f2Title: "Dual Native Audio",
@@ -61,8 +61,8 @@ const translations = {
   },
   vi: {
     nav: {
-      apps: "Ứng dụng",
-      about: "Về Sungy",
+      apps: "Về Ứng dụng",
+      about: "Vì sao chọn Sungy",
       support: "Trung tâm Hỗ trợ",
       contact: "Liên hệ"
     },
@@ -70,14 +70,14 @@ const translations = {
       badge: "🌟 Ứng dụng Giáo dục cho Trẻ em",
       title: 'Ươm mầm tri thức qua <span class="highlight">Học tập Tương tác</span>',
       subtitle: "Sungy sáng tạo các trải nghiệm học tập vui nhộn, không quảng cáo và an toàn, giúp trẻ phát triển ngôn ngữ, tư duy và sự sáng tạo từ sớm.",
-      ctaPrimary: "Khám phá SKidsEnglish",
+      ctaPrimary: "Khám phá Sungy",
       ctaSecondary: "Hỗ trợ & Pháp lý"
     },
     featured: {
       badge: "🚀 Ứng dụng Nổi bật",
-      title: "SKidsEnglish",
+      title: "Sungy",
       tagline: "Học tiếng Anh Mầm non Tương tác & Vui nhộn",
-      desc: "SKidsEnglish biến việc học từ vựng thành một cuộc phiêu lưu thú vị! Thiết kế dành riêng cho lứa tuổi mầm non, bé sẽ khám phá các chủ đề sinh động, luyện phát âm chuẩn bản xứ và sưu tầm nhãn dán phần thưởng.",
+      desc: "Sungy biến việc học từ vựng thành một cuộc phiêu lưu thú vị! Thiết kế dành riêng cho lứa tuổi mầm non, bé sẽ khám phá các chủ đề sinh động, luyện phát âm chuẩn bản xứ và sưu tầm nhãn dán phần thưởng.",
       f1Title: "27+ Bài học Chọn lọc",
       f1Desc: "Bao gồm các chủ đề quen thuộc: sinh hoạt hàng ngày, khám phá ngoài trời, cơ thể & cảm xúc.",
       f2Title: "Giọng đọc Bản xứ Chuẩn",
