@@ -8,7 +8,8 @@ const translations = {
       apps: "About Sungy",
       about: "Why Sungy",
       support: "Support Center",
-      contact: "Contact Us"
+      contact: "Contact Us",
+      download: "📲 Get the App"
     },
     hero: {
       badge: "🌟 Educational App for Children",
@@ -64,7 +65,8 @@ const translations = {
       apps: "Về Ứng dụng",
       about: "Vì sao chọn Sungy",
       support: "Trung tâm Hỗ trợ",
-      contact: "Liên hệ"
+      contact: "Liên hệ",
+      download: "📲 Tải Ứng dụng"
     },
     hero: {
       badge: "🌟 Ứng dụng Giáo dục cho Trẻ em",

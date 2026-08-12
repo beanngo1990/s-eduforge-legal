@@ -5,7 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sungy – Inspiring Safe & Interactive Learning for Kids</title>
   <meta name="description" content="Sungy creates engaging, ad-free educational applications for children, featuring interactive English learning for early language acquisition.">
+  <meta name="keywords" content="Sungy, Sungy app, tiếng Anh cho bé, học tiếng Anh mầm non, ứng dụng học tiếng Anh trẻ em, early English learning, kids educational app, safe kids app">
+  <link rel="canonical" href="https://sungy.net/">
   <link rel="icon" type="image/png" href="icon.png">
+
+  <!-- Open Graph / Facebook / Zalo -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sungy.net/">
+  <meta property="og:site_name" content="Sungy">
+  <meta property="og:title" content="Sungy – Inspiring Safe & Interactive Learning for Kids">
+  <meta property="og:description" content="Sungy creates engaging, ad-free educational applications for children, featuring interactive English learning for early language acquisition.">
+  <meta property="og:image" content="https://sungy.net/icon.png">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://sungy.net/">
+  <meta name="twitter:title" content="Sungy – Inspiring Safe & Interactive Learning for Kids">
+  <meta name="twitter:description" content="Sungy creates engaging, ad-free educational applications for children, featuring interactive English learning for early language acquisition.">
+  <meta name="twitter:image" content="https://sungy.net/icon.png">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Sungy",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "EducationalApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Sungy creates engaging, ad-free educational applications for children, featuring interactive English learning for early language acquisition.",
+    "author": {
+      "@type": "Person",
+      "name": "Sang Ngo"
+    },
+    "url": "https://sungy.net/",
+    "downloadUrl": "https://sungy.net/download"
+  }
+  </script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,6 +63,9 @@
         <li><a href="#about" data-i18n="nav.about">Why Sungy</a></li>
         <li><a href="https://support.sungy.net/" target="_blank" data-i18n="nav.support">Support Center</a></li>
         <li><a href="mailto:beanngo1990@gmail.com" class="btn-nav" data-i18n="nav.contact">Contact Us</a></li>
+        <li>
+          <a href="#store-buttons" id="nav-download-btn" class="btn-download" data-i18n="nav.download">📲 Get the App</a>
+        </li>
         <li>
           <button id="lang-toggle" class="lang-toggle-btn" aria-label="Toggle language">
             🌐 <strong>EN</strong> | VI
@@ -95,21 +139,21 @@
             </div>
           </div>
 
-          <div class="store-buttons">
-            <div class="store-badge-placeholder">
+          <div class="store-buttons" id="store-buttons">
+            <a href="https://apps.apple.com/app/id6790650146" target="_blank" rel="noopener noreferrer" class="store-badge">
               <span class="store-icon">🍏</span>
               <div>
                 <span class="store-small" data-i18n="featured.storeAppStoreSmall">Download on the</span>
                 <span class="store-name">App Store</span>
               </div>
-            </div>
-            <div class="store-badge-placeholder">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.seduforge.skidsenglish" target="_blank" rel="noopener noreferrer" class="store-badge">
               <span class="store-icon">🤖</span>
               <div>
                 <span class="store-small" data-i18n="featured.storeGooglePlaySmall">GET IT ON</span>
                 <span class="store-name">Google Play</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

@@ -134,6 +134,24 @@ body {
   box-shadow: var(--shadow-sm);
 }
 
+/* Download CTA button in navbar */
+.nav-links a.btn-download {
+  background: linear-gradient(135deg, var(--secondary) 0%, #FFB830 100%);
+  color: var(--secondary-dark);
+  padding: 8px 18px;
+  font-weight: 800;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(255, 184, 48, 0.35);
+  transition: all 0.25s ease;
+}
+
+.nav-links a.btn-download:hover {
+  background: linear-gradient(135deg, #FFB830 0%, var(--secondary) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 184, 48, 0.45);
+  color: var(--secondary-dark);
+}
+
 /* Language Toggle Button */
 .lang-toggle-btn {
   display: inline-flex;
@@ -389,7 +407,12 @@ body {
   border-top: 1px dashed var(--border);
 }
 
-.store-badge-placeholder {
+/* Offset sticky navbar when anchor-scrolling to store buttons */
+#store-buttons {
+  scroll-margin-top: calc(var(--nav-h) + 24px);
+}
+
+.store-badge {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -400,9 +423,10 @@ body {
   cursor: pointer;
   transition: opacity 0.2s, transform 0.2s;
   user-select: none;
+  text-decoration: none;
 }
 
-.store-badge-placeholder:hover {
+.store-badge:hover {
   opacity: 0.9;
   transform: translateY(-2px);
 }
@@ -597,5 +621,5 @@ body {
   .app-card { padding: 28px 20px; }
   .feature-list { grid-template-columns: 1fr; }
   .support-banner { padding: 36px 20px; }
-  .nav-links a:not(.btn-nav) { display: none; }
+  .nav-links a:not(.btn-nav):not(.btn-download) { display: none; }
 }
